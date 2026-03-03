@@ -1,0 +1,45 @@
+{
+  "templateType": "student",
+  "theme": "modern",
+  "header": {
+    "nameFont": "Montserrat-Bold",
+    "titleFont": "Montserrat-SemiBold",
+    "colors": {
+      "primary": "#3b82f6",
+      "secondary": "#6366f1"
+    }
+  },
+  "sections": [
+    {
+      "type": "contact",
+      "order": 1,
+      "fields": ["fullName", "email", "phone", "location"]
+    },
+    {
+      "type": "education",
+      "order": 2,
+      "layout": "detailed"
+    },
+    {
+      "type": "projects",
+      "order": 3
+    },
+    {
+      "type": "experience",
+      "order": 4
+    },
+    {
+      "type": "skills",
+      "order": 5,
+      "layout": "barGraph"
+    },
+    {
+      "type": "certifications",
+      "order": 6
+    }
+  ],
+  "fonts": {
+    "header": "Montserrat",
+    "body": "Inter"
+  }
+}

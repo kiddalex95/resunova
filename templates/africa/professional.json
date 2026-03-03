@@ -1,0 +1,45 @@
+{
+  "templateType": "professional",
+  "theme": "modern",
+  "header": {
+    "nameFont": "Montserrat-Bold",
+    "titleFont": "Montserrat-SemiBold",
+    "colors": {
+      "primary": "#2563eb",
+      "secondary": "#4f46e5"
+    }
+  },
+  "sections": [
+    {
+      "type": "contact",
+      "order": 1,
+      "fields": ["fullName", "email", "phone", "location"]
+    },
+    {
+      "type": "summary",
+      "order": 2
+    },
+    {
+      "type": "experience",
+      "order": 3,
+      "layout": "twoColumn"
+    },
+    {
+      "type": "skills",
+      "order": 4,
+      "layout": "barGraph"
+    },
+    {
+      "type": "education",
+      "order": 5
+    },
+    {
+      "type": "certifications",
+      "order": 6
+    }
+  ],
+  "fonts": {
+    "header": "Montserrat",
+    "body": "Inter"
+  }
+}

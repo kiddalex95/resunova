@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResuNova – Global Resume Builder</title>
+    <!-- LINK TO GLOBAL CSS -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <h1>ResuNova</h1>
+        <div class="header-buttons">
+            <button id="togglePlanBtn" class="plan-toggle">Switch to Premium</button>
+            <button id="themeToggleBtn" class="theme-toggle">Toggle Theme</button>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-container">
+
+        <!-- FORM SECTION -->
+        <section class="form-section">
+            <select id="templateSelect" class="template-switcher">
+                <option value="student">Student</option>
+                <option value="professional" selected>Professional</option>
+                <option value="executive">Executive</option>
+            </select>
+
+            <form id="formFields">
+                <div class="form-row"><label>Full Name</label><input type="text" name="fullName" required></div>
+                <div class="form-row"><label>Email</label><input type="email" name="email" required></div>
+                <div class="form-row"><label>Phone</label><input type="text" name="phone"></div>
+                <div class="form-row"><label>Audience</label>
+                    <select name="audience">
+                        <option value="student">Student</option>
+                        <option value="professional" selected>Professional</option>
+                        <option value="executive">Executive</option>
+                    </select>
+                </div>
+                <div class="form-row"><label>Country</label><select id="regionSelect" name="country"></select></div>
+                <div class="form-row"><label>Province / State</label><select id="locationSelect" name="location"></select></div>
+                <div class="form-row"><label>Summary</label><textarea name="summary" rows="3"></textarea></div>
+                <div class="form-row"><label>Education</label><textarea name="education" rows="3"></textarea></div>
+                <div class="form-row"><label>Experience</label><textarea name="experience" rows="3"></textarea></div>
+                <div class="form-row"><label>Skills</label><input type="text" name="skills" placeholder="Comma-separated"></div>
+                <div class="form-row"><label>Projects</label><textarea name="projects" rows="2"></textarea></div>
+                <div class="form-row"><label>Certifications</label><textarea name="certifications" rows="2"></textarea></div>
+                <button type="submit" class="submit-btn">Render Resume</button>
+                <button type="button" id="exportPDF" class="submit-btn">Export PDF</button>
+            </form>
+        </section>
+
+        <!-- PREVIEW SECTION -->
+        <section class="preview-section">
+            <div id="resumePreview" class="resume-preview"></div>
+
+            <div id="premiumPanel" class="premium-panel hidden">
+                <h3>Premium Features</h3>
+                <p id="keywordScore">ATS Match Score: 0%</p>
+                <label>Cover Letter:</label>
+                <textarea id="coverLetter" rows="5" readonly></textarea>
+            </div>
+
+            <div id="versionPanel" class="version-panel hidden">
+                <h4>Resume Versions</h4>
+                <ul id="versionList"></ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- CORE JS -->
+    <script type="module" src="core/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{
+  "templateType": "executive",
+  "theme": "classic",
+  "header": {
+    "nameFont": "PlayfairDisplay-Bold",
+    "titleFont": "PlayfairDisplay-SemiBold",
+    "colors": {
+      "primary": "#111827",
+      "secondary": "#374151"
+    }
+  },
+  "sections": [
+    {
+      "type": "contact",
+      "order": 1,
+      "fields": ["fullName", "email", "phone", "location", "linkedin"]
+    },
+    {
+      "type": "executiveSummary",
+      "order": 2
+    },
+    {
+      "type": "leadershipExperience",
+      "order": 3
+    },
+    {
+      "type": "achievements",
+      "order": 4
+    },
+    {
+      "type": "boardMemberships",
+      "order": 5
+    },
+    {
+      "type": "education",
+      "order": 6
+    }
+  ],
+  "fonts": {
+    "header": "Playfair Display",
+    "body": "Georgia"
+  }
+}

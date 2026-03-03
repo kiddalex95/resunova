@@ -1,0 +1,26 @@
+{
+  "modern": {
+    "headerColor":"#3b82f6",
+    "accentColor":"#6366f1",
+    "fontHeader":"Montserrat",
+    "fontBody":"Inter",
+    "panelBackground":"rgba(255,255,255,0.05)",
+    "glassEffect":true
+  },
+  "classic": {
+    "headerColor":"#1f2937",
+    "accentColor":"#4b5563",
+    "fontHeader":"Georgia",
+    "fontBody":"Times New Roman",
+    "panelBackground":"#f9fafb",
+    "glassEffect":false
+  },
+  "futuristic": {
+    "headerColor":"#00f6ff",
+    "accentColor":"#ff00f6",
+    "fontHeader":"Orbitron-Bold",
+    "fontBody":"Roboto",
+    "panelBackground":"rgba(0,0,0,0.4)",
+    "glassEffect":true
+  }
+}

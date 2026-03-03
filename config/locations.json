@@ -1,0 +1,37 @@
+{
+  "South Africa": [
+    "Gauteng",
+    "Western Cape",
+    "Eastern Cape",
+    "KwaZulu-Natal",
+    "Limpopo",
+    "Mpumalanga",
+    "North West",
+    "Free State",
+    "Northern Cape"
+  ],
+  "USA": [
+    "California",
+    "Texas",
+    "New York",
+    "Florida",
+    "Illinois",
+    "Pennsylvania",
+    "Ohio",
+    "Georgia"
+  ],
+  "Canada": [
+    "Ontario",
+    "Quebec",
+    "British Columbia",
+    "Alberta",
+    "Manitoba"
+  ],
+  "Australia": [
+    "New South Wales",
+    "Victoria",
+    "Queensland",
+    "Western Australia",
+    "South Australia"
+  ]
+}

@@ -1,0 +1,9 @@
+export function generateCoverLetter(userData, template) {
+    const greeting = `Dear Hiring Manager,`;
+    const intro = `I am ${userData.fullName}, applying for a role as ${userData.audience}.`;
+    const summary = userData.summary||"I have relevant experience and skills to contribute effectively to your team.";
+    let experienceLines = '';
+    template.sections?.forEach(sec=>{ if(sec.title.toLowerCase().includes('experience')) experienceLines += sec.items.map(item=>`- ${item}`).join('\n'); });
+    const closing = `I would welcome the opportunity to discuss my application in more detail. Thank you for your time and consideration.\nSincerely,\n${userData.fullName}`;
+    return [greeting,intro,summary,experienceLines,closing].join('\n\n');
+}

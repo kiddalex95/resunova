@@ -1,0 +1,15 @@
+{
+  "defaultPlan": "basic",
+  "premiumFeatures": [
+    "keywordAnalyzer",
+    "coverLetterGenerator",
+    "multiLanguage",
+    "themeCustomizer"
+  ],
+  "basicFeatures": [
+    "resumeRender",
+    "pdfExport",
+    "regionDefaults"
+  ],
+  "supportedLanguages": ["en","fr","es","de","zh","ar","zh-cn","ja","ko"]
+}

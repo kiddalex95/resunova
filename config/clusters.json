@@ -1,0 +1,7 @@
+{
+  "Africa": ["northAfrica","southAfrica","subSaharanAfrica"],
+  "Americas": ["northAmerica","centralAmerica","southAmerica"],
+  "Europe": ["westernEurope","easternEurope","northernEurope","southernEurope"],
+  "Asia": ["eastAsia","southAsia","southeastAsia","middleEast","centralAsia"],
+  "Oceania": ["australia","newZealand","pacificIslands"]
+}

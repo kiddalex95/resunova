@@ -1,0 +1,183 @@
+/* ===============================
+   VARIABLES
+=============================== */
+:root {
+    --primary-color: #3b82f6;          /* Blue */
+    --secondary-color: #6366f1;        /* Indigo */
+    --accent-color: #f59e0b;           /* Orange/Highlight */
+    --background-color: #f9fafb;
+    --card-bg: #ffffff;
+    --panel-bg: #f3f4f6;
+    --text-color: #111827;
+    --header-font: 'Montserrat', sans-serif;
+    --body-font: 'Inter', sans-serif;
+    --transition-speed: 0.3s;
+}
+
+/* ===============================
+   RESET & BASE
+=============================== */
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family: var(--body-font); background: var(--background-color); color: var(--text-color); line-height:1.6; }
+h1,h2,h3,h4,h5 { font-family: var(--header-font); margin-bottom:0.5rem; }
+button, input, select, textarea { font-family: inherit; outline:none; }
+a { text-decoration:none; color: inherit; }
+
+/* ===============================
+   HEADER
+=============================== */
+.header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 2rem;
+    background:var(--primary-color);
+    color:white;
+    flex-wrap:wrap;
+    border-bottom: 4px solid var(--secondary-color);
+}
+.header h1 { font-size:2rem; letter-spacing:1px; }
+.header-buttons button {
+    margin-left:0.5rem;
+    border-radius:6px;
+    padding:0.5rem 1rem;
+    font-weight:600;
+    cursor:pointer;
+    transition: all var(--transition-speed);
+}
+.plan-toggle { background-color: var(--secondary-color); color:white; border:none; }
+.plan-toggle:hover { background-color: #4f46e5; }
+.theme-toggle { background-color:white; color:var(--primary-color); border:none; }
+.theme-toggle:hover { background-color:#e5e7eb; }
+
+/* ===============================
+   MAIN CONTAINER
+=============================== */
+.main-container {
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    padding:1rem;
+}
+.form-section, .preview-section {
+    background: var(--card-bg);
+    padding:1.5rem;
+    border-radius:10px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.07);
+}
+
+/* ===============================
+   FORM ELEMENTS
+=============================== */
+.form-row { display:flex; flex-direction:column; margin-bottom:1rem; }
+.form-row label { font-weight:600; margin-bottom:0.3rem; color:var(--text-color);}
+.form-row input, .form-row select, .form-row textarea {
+    padding:0.6rem;
+    border:1px solid #d1d5db;
+    border-radius:6px;
+    font-size:1rem;
+    width:100%;
+    transition: border var(--transition-speed), box-shadow var(--transition-speed);
+}
+.form-row input:focus, .form-row select:focus, .form-row textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow:0 0 0 2px rgba(59,130,246,0.2);
+}
+.submit-btn {
+    padding:0.7rem 1.5rem;
+    font-weight:bold;
+    background:var(--primary-color);
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    margin-top:0.5rem;
+    transition: background var(--transition-speed), transform var(--transition-speed);
+}
+.submit-btn:hover { background:var(--secondary-color); transform:scale(1.02); }
+
+/* ===============================
+   TEMPLATE SELECTOR
+=============================== */
+.template-switcher { width:100%; margin-bottom:1rem; padding:0.5rem; border-radius:6px; border:1px solid #d1d5db; font-size:1rem; }
+
+/* ===============================
+   RESUME PREVIEW
+=============================== */
+.resume-preview {
+    padding:1rem 1.5rem;
+    border:2px solid var(--primary-color);
+    border-radius:10px;
+    min-height:500px;
+    overflow-x:auto;
+    font-size:0.95rem;
+    line-height:1.5;
+    background:white;
+}
+.resume-preview h2 { margin-top:1rem; color:var(--primary-color); font-size:1.3rem; border-bottom:2px solid var(--accent-color); padding-bottom:0.3rem;}
+.resume-preview h3 { font-size:1.1rem; color:var(--secondary-color); margin-top:0.8rem; }
+.resume-preview p, .resume-preview li { margin-bottom:0.5rem; }
+
+/* ===============================
+   SKILL VISUALIZER
+=============================== */
+.skills-container {
+    margin-top:1rem;
+    display:flex;
+    flex-direction:column;
+    gap:0.6rem;
+}
+.skill-bar {
+    display:flex;
+    justify-content:space-between;
+    background:#e5e7eb;
+    border-radius:6px;
+    padding:0.4rem 0.5rem;
+    align-items:center;
+}
+.skill-bar span { font-weight:bold; font-size:0.9rem; width:30%; }
+.skill-fill {
+    height:12px;
+    border-radius:6px;
+    background: var(--primary-color);
+    transition: width 1s ease-in-out;
+    flex-grow:1;
+    margin-left:0.5rem;
+}
+
+/* ===============================
+   PREMIUM PANEL
+=============================== */
+.premium-panel, .version-panel {
+    margin-top:1rem;
+    padding:1rem;
+    background:var(--panel-bg);
+    border-left:4px solid var(--primary-color);
+    border-radius:6px;
+}
+#coverLetter { width:100%; resize:none; margin-top:0.5rem; padding:0.5rem; border-radius:6px; border:1px solid #d1d5db; background:white; }
+
+/* ===============================
+   HIDDEN CLASS
+=============================== */
+.hidden { display:none; }
+
+/* ===============================
+   DARK THEME
+=============================== */
+.dark-theme { background:#1f2937; color:#f9fafb; }
+.dark-theme .form-section, .dark-theme .preview-section, .dark-theme .premium-panel {
+    background:#111827; color:#f3f4f6; border-color:#3b82f6;
+}
+.dark-theme input, .dark-theme select, .dark-theme textarea { background:#1f2937; color:white; border:1px solid #3b82f6; }
+.dark-theme .submit-btn { background:#3b82f6; color:white; }
+.dark-theme .submit-btn:hover { background:#6366f1; }
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+@media(min-width:768px) {
+    .main-container { flex-direction:row; }
+    .form-section, .preview-section { flex:1; }
+    .preview-section { margin-left:1rem; }
+}
